@@ -7,7 +7,7 @@ const socialMedia = [
 	{ title: 'habr', path: 'https://habr.com/ru/users/apayrus/' },
 	{ title: 'github', path: 'https://github.com/apayrus' },
 	{ title: 'twitter', path: 'https://twitter.com/apayrus/' },
-	{ title: 'devto', path: 'https://devto.com/apayrus/' },
+	{ title: 'devto', path: 'https://dev.to/apayrus/' },
 	{ title: 'substack', path: 'https://apayrus.substack.com/' },
 	{ title: 'medium', path: 'https://medium.com/@apayrus' }
 ]

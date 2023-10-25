@@ -1,17 +1,36 @@
 import * as React from 'react'
-import Header from '../components/Header'
+import MdBlock from '../components/MdBlock'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
-const IndexPage = () => {
+const IndexPage = ({ data }: { data: any }) => {
 	return (
-		<main>
-			<Header />
-			<img
-				src='/my-photo.jpg'
-				alt='my photo'
-				style={{ width: 100, borderRadius: '50%' }}
-			/>
-		</main>
+		<Layout>
+			<main>
+				{data.allMarkdownRemark.nodes.map((data: any) => {
+					return <MdBlock {...{ data }} />
+				})}
+			</main>
+		</Layout>
 	)
 }
 
 export default IndexPage
+
+export const query = graphql`
+	query MainPageMdBlocks {
+		allMarkdownRemark(
+			filter: { frontmatter: { slug: { in: ["mission", "product", "about"] } } }
+			sort: { frontmatter: { order: ASC } }
+		) {
+			nodes {
+				frontmatter {
+					image
+					slug
+					title
+				}
+				html
+			}
+		}
+	}
+`

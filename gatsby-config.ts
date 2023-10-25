@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby'
 const config: GatsbyConfig = {
 	siteMetadata: {
 		title: `ApayRus.cc`,
-		subtitle: `creative coding`,
+		subtitle: `цифровизация знаний`,
 		siteUrl: `https://apayrus.cc`
 	},
 	// More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -16,7 +16,7 @@ const config: GatsbyConfig = {
 			resolve: 'gatsby-plugin-google-gtag',
 			options: {
 				trackingIds: [
-					'GA-TRACKING_ID', // Google Analytics / GA
+					'G-Y114L86GG6', // Google Analytics / GA
 					'AW-CONVERSION_ID', // Google Ads / Adwords / AW
 					'DC-FLOODIGHT_ID' // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
 				]
@@ -26,6 +26,7 @@ const config: GatsbyConfig = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sitemap',
+		'gatsby-theme-material-ui',
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
@@ -70,6 +71,10 @@ const config: GatsbyConfig = {
 					{
 						name: `Comfortaa`,
 						file: `https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap`
+					},
+					{
+						name: `Roboto`,
+						file: `https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap`
 					}
 				]
 			}

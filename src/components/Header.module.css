@@ -1,3 +1,13 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+
 .title,
 .subtitle {
 	font-family: Comfortaa;
@@ -11,21 +21,20 @@
 	color: #1976d2;
 	font-weight: 100;
 	letter-spacing: 0.2rem;
+	line-height: 1.5rem;
 }
 
 .subtitle {
 	color: grey;
 	font-size: 1rem;
 	margin-top: 0px;
-	letter-spacing: 0.37rem;
+	letter-spacing: 0.08rem;
 }
 
-.headerWrapper {
+.titles {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
-	align-items: center;
 }
 
 .logoAndTitles {

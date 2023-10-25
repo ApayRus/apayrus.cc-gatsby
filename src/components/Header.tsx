@@ -19,7 +19,7 @@ const Header = () => {
 	const { title, subtitle } = data.site.siteMetadata
 
 	return (
-		<div className={styles.headerWrapper}>
+		<div className={styles.container}>
 			<div className={styles.logoAndTitles}>
 				<div className={styles.logo}>
 					<img src='/icon.png' alt='site logo' />

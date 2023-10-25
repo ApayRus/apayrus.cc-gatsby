@@ -1,0 +1,37 @@
+.container {
+	margin-top: 1rem;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+h2 {
+	font-family: Comfortaa;
+	margin: 0.5rem;
+	color: #1976d2;
+}
+
+p,
+li {
+	font-family: Roboto;
+	font-size: 1.1rem;
+	font-weight: 300;
+	margin-top: 0;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.cover img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+li::marker {
+	color: grey;
+}
+
+ul {
+	padding-left: 1.5rem;
+}
