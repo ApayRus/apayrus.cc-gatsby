@@ -20,6 +20,7 @@ const SocialIcons: React.FC<SocialMediaProps> = props => {
 						size='small'
 						variant='text'
 						href={path}
+						target='_blank'
 						key={`socialButton-${index}`}
 						title='title'
 					>
